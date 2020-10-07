@@ -1,0 +1,26 @@
+@import "../css/component/header";
+@import "../css/component/nav";
+@import "../css/component/slider";
+
+@import "../css/component/present";
+@import "../css/component/cards-services";
+@import "../css/component/we-client";
+@import "../css/component/posts";
+
+@import "../css/component/footer";
+
+
+@import "../css/component/variables";
+@import "../css/component/mixins";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}

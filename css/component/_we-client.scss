@@ -1,0 +1,138 @@
+@import "variables";
+@import "mixins";
+
+
+.content-tittle-client {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: block;
+
+    .tittle-client {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        h2 {
+            font-size: 70px;
+            color: #113d9b;
+            text-align: center;
+            text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.246);
+        }
+
+        .rh1 {
+            width: 45%;
+            height: 2px;
+            margin-top: 50px;
+            // display: flex;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .rh {
+            width: 20%;
+            height: 2px;
+            margin-top: 50px;
+            // display: flex;
+            background-color: rgb(0, 0, 0);
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    display: block;
+    overflow: hidden;
+
+    .container2{
+        width:100%;
+        height: 100%;
+        background-color:#fff;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        ul{
+            list-style:none;
+        }
+    
+        .content-box {
+            width: auto;
+            height: auto;
+    
+            .box{
+                @include box;
+        
+                img {
+                    width: 200%;
+                    height: 100%;
+                }
+            }
+    
+            .box1{
+                @include box;
+    
+                img {
+                    width: 150%;
+                    height: 120%;
+                    margin-top: -40px;
+                }
+            }
+    
+            .box2{
+                @include box;
+    
+                img {
+                    width: 150%;
+                    height: 120%;
+                    margin-top: -30px;
+                }
+            }
+    
+            .box3{
+                @include box;
+    
+                img {
+                    width: 150%;
+                    height: 120%;
+                    margin-top: -60px;
+                    margin-left: 20px;
+                }
+            }
+    
+            .box4{
+                @include box;
+    
+                img {
+                    width: 200%;
+                    height: 150%;
+                    margin-top: -90px;
+                }
+            }
+    
+            .box5{
+                @include box;
+    
+                img {
+                    width: 140%;
+                    height: 120%;
+                    margin-top: -60px;
+                }
+            }
+        }
+    
+        @media(max-width:720px){
+            .box{
+                width: 94%;
+                height: 500px;
+            }
+    
+            .model{
+                height:250px;
+            }
+        }
+    }
+    
+}
